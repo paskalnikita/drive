@@ -10668,3 +10668,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 .rounded {
     border-radius: 55px !important;
 }
+
+.image-product {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}
