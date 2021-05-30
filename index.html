@@ -42,7 +42,7 @@
     <header class="masthead">
         <div class="container">
             <div class="text-uppercase text-danger "><b><h1>Dywan</h1></b></div>
-            <div class="masthead-heading text-uppercase text-white">Dopasowany dla ciebie</div>
+            <div class="masthead-heading text-uppercase text-white">Dopasowany / specjalnie dla ciebie</div>
             <a class="btn btn-danger btn-xl text-uppercase js-scroll-trigger rounded" href="#portfolio">Wybieram</a>
         </div>
     </header>
@@ -153,11 +153,11 @@
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input class="form-control rounded" id="name" type="text" placeholder="Imie *" />
+                            <input class="form-control rounded" id="name" type="text" placeholder="Imie" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group">
-                            <input class="form-control rounded" id="email" type="email" placeholder="@mail*" />
+                            <input class="form-control rounded" id="email" type="email" placeholder="@mail" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group mb-md-0">
@@ -167,7 +167,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
-                            <textarea class="form-control rounded" id="message" placeholder="More"></textarea>
+                            <textarea class="form-control rounded" id="message" placeholder="co? tak.>"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -175,8 +175,7 @@
                 <div class="text-center">
                     <div class="row">
                         <div class="col">
-                            <button class="btn btn-danger btn-xl text-uppercase rounded" id="sendMessageButton" type="submit">Message</button>
-
+                            <button class="btn btn-danger btn-xl text-uppercase rounded" id="sendMessageButton" type="submit">Wyślij</button>
                         </div>
                         <div class="col">
                             <a href="tel:+48575862994" class="btn btn-success btn-x2 text-uppercase rounded">Call</a>
@@ -184,6 +183,21 @@
                             <button class="btn btn-danger btn-x2 text-uppercase rounded" id="sendMessageButton" type="submit">Touch </button>
                             <button class="btn btn-danger btn-x2 text-uppercase rounded" id="sendMessageButton" type="submit">Action</button>
                         </div>
+                    </div>
+
+
+                    <div class="row text-center">
+                        <div class="col">
+                            <?xml version="1.0" encoding="UTF-8"?>
+                            <a href="tel: +48575862994">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="232" width="232" class="pyqrcode"><path transform="scale(8)" stroke="#000" class="pyqrline" d="M4 4.5h7m2 0h1m4 0h7m-21 1h1m5 0h1m1 0h1m5 0h1m5 0h1m-21 1h1m1 0h3m1 0h1m1 0h5m1 0h1m1 0h3m1 0h1m-21 1h1m1 0h3m1 0h1m1 0h4m2 0h1m1 0h3m1 0h1m-21 1h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1m1 0h3m1 0h1m-21 1h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h1m5 0h1m-21 1h7m1 0h1m1 0h1m1 0h1m1 0h7m-12 1h2m-9 1h1m2 0h4m1 0h4m1 0h5m-19 1h2m1 0h1m4 0h1m1 0h1m1 0h2m2 0h1m2 0h1m-21 1h2m1 0h1m2 0h3m1 0h4m1 0h2m1 0h1m1 0h1m-20 1h3m7 0h2m4 0h1m-18 1h9m3 0h4m1 0h1m2 0h1m-13 1h1m1 0h3m2 0h6m-21 1h7m1 0h2m1 0h2m1 0h5m1 0h1m-21 1h1m5 0h1m1 0h1m1 0h3m6 0h2m-21 1h1m1 0h3m1 0h1m2 0h1m1 0h3m2 0h1m3 0h1m-21 1h1m1 0h3m1 0h1m2 0h1m1 0h3m1 0h2m1 0h1m-19 1h1m1 0h3m1 0h1m1 0h1m6 0h3m1 0h2m-21 1h1m5 0h1m4 0h1m2 0h3m-17 1h7m4 0h5m1 0h1m2 0h1"/></svg>
+                            </a>
+                            <br>
+                            <h1>
+                                <i class="fal fa-hand-point-up"></i>
+                            </h1>
+                        </div>
+
                     </div>
 
                     <div id="success"></div>
@@ -306,6 +320,48 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- <div id="mydiv">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex in nemo neque vel ipsum minus obcaecati veritatis hic, excepturi, doloribus magni possimus, aliquid sed. Porro ipsam ab rem provident maiores! Tempora cupiditate mollitia eum facere ducimus
+        dignissimos totam provident odit a quia explicabo iste cum nesciunt fuga sunt labore corporis molestias vel architecto commodi, placeat dolorum. Beatae quae qui saepe? Accusantium vitae cumque repellat quam, cum alias voluptatibus quasi deleniti
+        sit enim blanditiis aliquid voluptatum placeat reiciendis! Optio sapiente dignissimos nam adipisci voluptas, cumque reiciendis obcaecati dolores eum, maxime facere. Animi asperiores aliquam at beatae quo, voluptatum ab deserunt ullam fugiat. Minima
+        officiis nemo minus cum labore, ipsum nihil tempore quaerat iure sed optio a, beatae fugiat debitis voluptatem sunt. Nam voluptatum quaerat nulla, dolor officia aliquid autem minus tenetur molestias quisquam magnam repellendus ducimus ratione
+        repellat reiciendis error, nobis omnis est facilis molestiae obcaecati blanditiis nemo modi. Doloribus, ad. Reprehenderit excepturi repellat blanditiis aliquam vitae asperiores doloribus iure veniam eum facere sint assumenda rerum labore doloremque
+        mollitia perspiciatis minus, maxime sapiente a ipsum nesciunt. Consequuntur commodi nobis impedit in! Molestiae adipisci quod veniam consequatur, non ullam deserunt eum inventore. Labore architecto minus, adipisci aspernatur beatae quia velit
+        praesentium expedita nihil, dicta nesciunt magni modi pariatur blanditiis perspiciatis repudiandae iure! Corporis cum accusamus eum ex nihil iste, adipisci optio voluptatem aperiam eius atque aspernatur corrupti porro sed veritatis reiciendis
+        ratione error ullam expedita eos animi facilis? Dolorem officia sapiente quia! Blanditiis, quod? Debitis ad aliquam veniam quas, vitae doloribus ullam, voluptas beatae autem, inventore deleniti molestias? Sequi enim consequuntur, fuga aut laudantium,
+        accusantium optio animi voluptatem commodi quod ullam pariatur. Sint officia unde nisi veniam voluptatibus rem, aperiam voluptates natus facilis eveniet. Neque illo dolores laboriosam commodi in modi molestias libero doloremque, autem id provident
+        fugit reiciendis iste fuga obcaecati. Asperiores, sequi quasi distinctio ipsum tempora aliquam pariatur nisi assumenda praesentium vero accusantium illum qui? Vel eius dolorum, ea sit soluta qui harum voluptatibus, ipsum modi tenetur necessitatibus
+        minus asperiores. Suscipit consequuntur eius ipsam harum amet et laboriosam. Aut vel obcaecati cum consequuntur, necessitatibus veritatis ipsum quaerat saepe, quas illum est fuga nesciunt facere? Numquam error tempore doloribus neque dolorem.
+        Nesciunt illo maxime voluptas ratione eveniet ipsa beatae expedita laborum, excepturi iusto? Cumque eius quae quidem libero eligendi quas aliquid, placeat voluptatem id a ut ullam repudiandae harum! Nam, expedita! Architecto dolores eveniet voluptates
+        doloremque praesentium omnis rerum beatae minus itaque? Tempore reiciendis id illum cumque quidem modi consequuntur nostrum quo voluptates natus, consequatur harum, sequi magnam architecto. Vitae, animi! Voluptates laudantium sequi veniam nesciunt
+        amet voluptatem, ducimus nostrum. Repudiandae sunt numquam, temporibus dolorem iusto dicta, fuga debitis in dolores quas ullam! Minus mollitia aspernatur cupiditate provident officia atque eligendi. Mollitia dolor hic perspiciatis accusamus iure.
+        Exercitationem enim quod nobis vero distinctio assumenda quaerat nemo nesciunt! Reiciendis eos sequi harum soluta quisquam quidem atque nihil, mollitia aperiam, molestias repellendus architecto? Error consequuntur vel, saepe quisquam tempora minus
+        et omnis mollitia repellat doloribus veniam modi laborum, officia, exercitationem quibusdam aperiam nihil molestiae maiores accusamus at! Non, corporis. Aspernatur sint rerum repudiandae. Similique, ducimus fugit delectus consectetur repellat,
+        possimus voluptatibus repellendus assumenda provident, minima modi. Quibusdam, facilis nobis! Sed dolorum voluptate praesentium possimus nemo, sint beatae maxime rerum, ipsam illo vero molestiae? Assumenda, animi inventore, cum dicta quas minima
+        ullam ipsa nihil necessitatibus incidunt obcaecati rerum. Voluptatum ipsam eligendi fugiat accusamus? Alias, fugiat? Dolore esse praesentium nihil dolorum sit, rem doloribus natus? Numquam odit rerum exercitationem libero aspernatur sunt dignissimos
+        accusantium laborum magni et modi vel autem nostrum in distinctio corrupti inventore error dolores mollitia, dolorum maxime deleniti natus. Sit, magnam distinctio!</div>
+    </div>
+    <style>
+        #mydiv {
+            /* width: 100px; */
+            /* height: 100px; */
+            background: #000;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        setTimeout(function() {
+            $('#mydiv').fadeIn('slow');
+        }, 100000); // <-- time in milliseconds
+    </script> -->
+
+
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
