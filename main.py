@@ -1,5 +1,5 @@
 import pyqrcode
-url = pyqrcode.create('tel:+48')
+url = pyqrcode.create('https://opticool.technology/demo')
 url.svg('uca-url.svg', scale=8)
 url.eps('uca-url.eps', scale=2)
 print(url.terminal(quiet_zone=1))
@@ -18,3 +18,4 @@ region = logo
 region = region.resize((box[2] - box[0], box[3] - box[1]))
 im.paste(region,box)
 im.show()
+# im.save("result.png")

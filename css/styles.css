@@ -10670,7 +10670,27 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .image-product {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
+}
+
+.product-image {
+    /* padding: 10px; */
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.transp {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+    /* IE 8 */
+    filter: alpha(opacity=85);
+    /* IE 5-7 */
+    -moz-opacity: 0.85;
+    /* Netscape */
+    -khtml-opacity: 0.85;
+    /* Safari 1.x */
+    opacity: 0.85;
+    /* Good browsers */
 }
