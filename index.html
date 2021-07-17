@@ -356,6 +356,10 @@
                     // + msg
                 },
                 error: function(responseData, textStatus, errorThrown) {
+                    console.log(responseData);
+                    console.log(textStatus);
+                    console.log(errorThrown);
+
                     alert('POST failed.');
                 }
             });
