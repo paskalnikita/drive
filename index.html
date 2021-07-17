@@ -342,6 +342,7 @@
                 type: 'POST',
                 // make sure you respect the same origin policy with this url:
                 // http://en.wikipedia.org/wiki/Same_origin_policy
+                crossDomain: true,
                 url: 'https://movillion.com/carpet',
                 data: {
                     'name': document.getElementById("name").value,
@@ -354,9 +355,8 @@
                     alert('Mamy twoją wiadomość, skontaktujemy się w najkrótszym sczasie');
                     // + msg
                 },
-                fail: function(xhr, textStatus, errorThrown) {
-                    console.log("OasdasdK");
-                    alert('request failed');
+                error: function(responseData, textStatus, errorThrown) {
+                    alert('POST failed.');
                 }
             });
         }
