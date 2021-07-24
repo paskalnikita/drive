@@ -339,6 +339,7 @@
         function send_form() {
             $.ajax({
                 type: 'POST',
+                crossDomain: true,
                 // make sure you respect the same origin policy with this url:
                 // http://en.wikipedia.org/wiki/Same_origin_policy
                 url: 'https://movillion.com/carpet',
