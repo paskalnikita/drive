@@ -337,30 +337,24 @@
     <script src="js/scripts.js"></script>
     <script>
         function send_form() {
-            console.log("OK");
             $.ajax({
                 type: 'POST',
                 // make sure you respect the same origin policy with this url:
                 // http://en.wikipedia.org/wiki/Same_origin_policy
-                crossDomain: true,
                 url: 'https://movillion.com/carpet',
                 data: {
                     'name': document.getElementById("name").value,
                     'email': document.getElementById("email").value,
                     'phone': document.getElementById("phone").value,
                     'message': document.getElementById("message").value,
+                    'carpet': "No"
                 },
                 success: function(msg) {
-                    console.log("aaaOK");
-                    alert('Mamy twoją wiadomość, skontaktujemy się w najkrótszym sczasie');
+                    alert('Mamy twoją wiadomość, skontaktujemy się w najkrótszym czasie');
                     // + msg
                 },
-                error: function(responseData, textStatus, errorThrown) {
-                    console.log(responseData);
-                    console.log(textStatus);
-                    console.log(errorThrown);
-
-                    alert('POST failed.');
+                fail: function(xhr, textStatus, errorThrown) {
+                    alert('Request failed');
                 }
             });
         }
