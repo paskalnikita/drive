@@ -337,6 +337,33 @@
     <script src="js/scripts.js"></script>
     <script>
         function send_form() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var message = document.getElementById("message").value;
+            var carpet = "index.";
+            $(location).attr('href', 'http://movillion.com/carpet?name=' + name + '&email=' + email + "&phone=" + phone + "&message=" + message + '&carpet=' + carpet);
+        }
+
+        function send_form1() {
+            // $.ajax({
+            //     type: "POST",
+            //     url: reqUrl,
+            //     data: reqBody,
+            //     dataType: "json",
+            //     success: function(data, textStatus) {
+            //         if (data.redirect) {
+            //             // data.redirect contains the string URL to redirect to
+            //             window.location.href = data.redirect;
+            //         } else {
+            //             // data.form contains the HTML for the replacement form
+            //             $("#myform").replaceWith(data.form);
+            //         }
+            //     }
+            // });
+
+
+
             $.ajax({
                 type: 'POST',
                 crossDomain: true,
