@@ -235,6 +235,16 @@ Rosyjski producent. Niespotykana jakość, w porównaniu do chińskich producent
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script>
+        function send_form() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var message = document.getElementById("message").value;
+            var carpet = "Nakładka";
+            $(location).attr('href', 'https://movillion.com/carpet?name=' + name + '&email=' + email + "&phone=" + phone + "&message=" + message + '&carpet=' + carpet);
+        }
+    </script>
 </body>
 
 </html>

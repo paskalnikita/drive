@@ -192,7 +192,7 @@ Rosyjski producent. Niespotykana jakość, w porównaniu do chińskich producent
                         <div class="text-center mb-1">
                             <div class="row">
                                 <div class="col">
-                                    <button class="btn btn-success btn-xl text-uppercase rounded" id="sendMessageButton" type="submit">Zamów</button>
+                                    <button class="btn btn-success btn-xl text-uppercase rounded" id="sendMessageButton" type="submit" onclick="send_form()">Zamów</button>
                                 </div>
                             </div>
 
@@ -235,6 +235,17 @@ Rosyjski producent. Niespotykana jakość, w porównaniu do chińskich producent
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+    <script>
+        function send_form() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var message = document.getElementById("message").value;
+            var carpet = "Dywan";
+            $(location).attr('href', 'http://movillion.com/carpet?name=' + name + '&email=' + email + "&phone=" + phone + "&message=" + message + '&carpet=' + carpet);
+        }
+    </script>
 </body>
 
 </html>
