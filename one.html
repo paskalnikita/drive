@@ -166,38 +166,36 @@ Rosyjski producent. Niespotykana jakość, w porównaniu do chińskich producent
                     <div class="text-center">
                         <h2 class="section-heading text-uppercase">Kontakt</h2>
                     </div>
-                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                        <div class="row align-items-stretch mb-5">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input class="form-control rounded" id="name" type="text" placeholder="Imie *" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control rounded" id="email" type="email" placeholder="@mail*" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group mb-md-0">
-                                    <input class="form-control rounded" id="phone" type="tel" placeholder="+48" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control rounded" id="name" type="text" placeholder="Imie *" />
+                                <p class="help-block text-danger"></p>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group form-group-textarea mb-md-0">
-                                    <textarea class="form-control rounded" rows=5 id="message" placeholder="More"></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
+                            <div class="form-group">
+                                <input class="form-control rounded" id="email" type="email" placeholder="@mail*" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <input class="form-control rounded" id="phone" type="tel" placeholder="+48" />
+                                <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <div class="text-center mb-1">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn btn-success btn-xl text-uppercase rounded" id="sendMessageButton" type="submit" onclick="send_form()">Zamów</button>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control rounded" rows=5 id="message" placeholder="More"></textarea>
+                                <p class="help-block text-danger"></p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="text-center mb-1">
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-danger btn-xl text-uppercase rounded" id="sendMessageButton" onclick="send_form()">Zamów</button>
+                            </div>
+                        </div>
 
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
